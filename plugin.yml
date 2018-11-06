@@ -3,10 +3,3 @@ main: ServerUI\Main
 author: RevengeTechDevs
 api: [3.0.0, 3.2.5, 4.0.0]
 version: "1.0.0-beta"
-description: "a serverui coded by revengetechdevs"
-  commands:
-    revengetechdevs:
-      default: true
-      aliases: ["revengetech"]
-      description: "revengetechdevs command"
-      useage: "/revengetechdevs or /revengetech"
