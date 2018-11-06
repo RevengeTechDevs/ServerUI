@@ -31,7 +31,7 @@ class Main extends PluginBase implements Listener{
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args):bool{
             if($cmd->getName() == "serverui"){
                 if(!($sender instanceof Player)){
-                    $sender->sendMessage("serverui by revengetechdevs", false);
+                    $sender->sendMessage("ServerUI By RevengeTechDevs", false);
                     return true;
                 }
                 $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
@@ -41,15 +41,47 @@ class Main extends PluginBase implements Listener{
                     }
                     switch ($result) {
                         case 0:
-                            $sender->sendMessage("revengetchdevs serverui");
+                            $sender->sendMessage("RevengeTech ServerUI");
                             break;
                         case 1:
                             $this->getServer()->getCommandMap()->dispatch($player, "fly");
                             break;
+                        case 2:
+                            $this->getServer()->getCommandMap()->dispatch($player, "heal");
+                            break;
+                        case 3:
+                            $this->getServer()->getCommandMap()->dispatch($player, "feed");
+                            break;
+                        case 4:
+                            $this->getServer()->getCommandMap()->dispatch($player, "gmc");
+                            break;
+                        case 5:
+                            $this->getServer()->getCommandMap()->dispatch($player, "gms");
+                            break;
+                        case 6:
+                            $this->getServer()->getCommandMap()->dispatch($player, "gmsp");
+                            break;
+                        case 7:
+                            $this->getServer()->getCommandMap()->dispatch($player, "gma");
+                            break;
+                        case 8:
+                            $this->getServer()->getCommandMap()->dispatch($player, "fix all");
+                            break;
+                        case 9:
+                            $this->getServer()->getCommandMap()->dispatch($player, "fix hand");
+                            break;
                     }
                 });
-                $form->setContent("revengetech serverui");
-                $form->addButton("Fly");
+                $form->setContent("RevengeTech ServerUI");
+                $form->addButton("fly");
+                $form->addButton("heal");
+                $form->addButton("feed");
+                $form->addButton("gamemode creative");
+                $form->addButton("gamemode survival");
+                $form->addButton("gamemode spectator");
+                $form->addButton("gamemode adventure");
+                $form->addButton("fix all");
+                $form->addButton("fix hand");
                 $form->sendToPlayer($sender);
             }
         return true;
