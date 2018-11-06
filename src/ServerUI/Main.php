@@ -44,44 +44,12 @@ class Main extends PluginBase implements Listener{
                             $sender->sendMessage("RevengeTech ServerUI");
                             break;
                         case 1:
-                            $this->getServer()->getCommandMap()->dispatch($player, "fly");
-                            break;
-                        case 2:
-                            $this->getServer()->getCommandMap()->dispatch($player, "heal");
-                            break;
-                        case 3:
-                            $this->getServer()->getCommandMap()->dispatch($player, "feed");
-                            break;
-                        case 4:
-                            $this->getServer()->getCommandMap()->dispatch($player, "gmc");
-                            break;
-                        case 5:
-                            $this->getServer()->getCommandMap()->dispatch($player, "gms");
-                            break;
-                        case 6:
-                            $this->getServer()->getCommandMap()->dispatch($player, "gmsp");
-                            break;
-                        case 7:
-                            $this->getServer()->getCommandMap()->dispatch($player, "gma");
-                            break;
-                        case 8:
-                            $this->getServer()->getCommandMap()->dispatch($player, "fix all");
-                            break;
-                        case 9:
-                            $this->getServer()->getCommandMap()->dispatch($player, "fix hand");
+                            $this->getServer()->getCommandMap()->dispatch($player, "transferserver revengetech.tk");
                             break;
                     }
                 });
                 $form->setContent("RevengeTech ServerUI");
-                $form->addButton("fly");
-                $form->addButton("heal");
-                $form->addButton("feed");
-                $form->addButton("gamemode creative");
-                $form->addButton("gamemode survival");
-                $form->addButton("gamemode spectator");
-                $form->addButton("gamemode adventure");
-                $form->addButton("fix all");
-                $form->addButton("fix hand");
+                $form->addButton("RevengeTech Server");
                 $form->sendToPlayer($sender);
             }
         return true;
