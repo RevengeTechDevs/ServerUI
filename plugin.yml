@@ -2,4 +2,8 @@ name: ServerUI
 main: ServerUI\Main
 author: RevengeTechDevs
 api: [3.0.0, 3.2.5, 4.0.0]
-version: "1.0.0-beta"
+version: 1.0.0
+commands:
+  serverui:
+    usage: /serverui
+    description: Opens The RevengeTech ServerUI
