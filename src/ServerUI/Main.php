@@ -2,7 +2,7 @@
 use pocketmine\PluginBase;
 use pocketmine\Server;
 use pocketmine\Player;
-class Main extends PluginBase Listener{
+class Main extends implements PluginBase{
 
     public function onEnable(): void{
         $this->getServer->getPluginManager()->registerEvents(($this), $this);
