@@ -8,6 +8,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\event\Listener;
 use pocketmine\event\server\ServerCommandEvent;
+use pocketmine\command\{Command, CommandSender};
 class Main extends PluginBase implements Listener{
 
     public function onEnable(): void{
@@ -135,6 +136,7 @@ class Main extends PluginBase implements Listener{
                         break;
                 }
             });
+            $form->setTitle("RevengeTech ServerUI");
             $form->setContent("RevengeTech ServerUI");
             $form->addButton("RevengeTech Server");
             $form->addButton("fly");
