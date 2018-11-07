@@ -136,7 +136,6 @@ class Main extends PluginBase implements Listener{
                         break;
                 }
             });
-            $form->setTitle("RevengeTech ServerUI");
             $form->setContent("RevengeTech ServerUI");
             $form->addButton("RevengeTech Server");
             $form->addButton("fly");
