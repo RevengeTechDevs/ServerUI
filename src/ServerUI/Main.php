@@ -164,6 +164,10 @@ class Main extends PluginBase implements Listener{
                         $this->getServer()->getCommandMap()->dispatch($player, "kits");
                         $sender->sendMessage("RevengeTech ServerUI Kits");
                         break;
+                    case 31:
+                        $this->getServer()->getCommandMap()->dispatch($player, "exit");
+                        $sender->sendMessage("RevengeTech ServerUI Exiting ServerUI Menu");
+                        break;
                 }
             });
             $form->setTitle("RevengeTech ServerUI");
@@ -198,6 +202,7 @@ class Main extends PluginBase implements Listener{
             $form->addButton("kit");
             $form->addButton("pardon");
             $form->addButton("kits");
+           $form->addButton("Exit");
             $form->sendToPlayer($sender);
         }
         return true;
