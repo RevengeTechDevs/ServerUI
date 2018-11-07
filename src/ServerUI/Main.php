@@ -12,12 +12,12 @@ class Main extends PluginBase implements Listener{
 
     public function onEnable(): void{
         $this->getServer()->getPluginManager()->registerEvents(($this), $this);
-        $this->getLogger()->info("Plugin Enabled");
+        $this->getLogger()->info("Plugin Enabled By RevengeTechDevs Not Completed Use The Command By Doing /serverui In Game");
     }
 
     public function onDisable(): void{
         $this->getServer()->getPluginManager()->registerEvents(($this), $this);
-        $this->getLogger()->info("Plugin Disabled");
+        $this->getLogger()->info("Plugin Disabled By RevengeTechDevs Not Completed Use The Command By Doing /serverui In Game");
     }
 
     public function checkDepends(): void{
@@ -202,7 +202,7 @@ class Main extends PluginBase implements Listener{
             $form->addButton("kit");
             $form->addButton("pardon");
             $form->addButton("kits");
-           $form->addButton("Exit");
+            $form->addButton("Exit");
             $form->sendToPlayer($sender);
         }
         return true;
